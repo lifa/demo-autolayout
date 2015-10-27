@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--jj.klo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="jj.klo" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X8-yz-Z4q" userLabel="btnright">
+                                <rect key="frame" x="137" y="225" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXn-bb-HyT" userLabel="子">
+                                <rect key="frame" x="139" y="230" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" hint="cvcx" label="同，岂"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Fs-1G-FG3">
+                                <rect key="frame" x="0.0" y="264" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="466327586.36137497">
+                                    <!--2015-10-12 07:26:26 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Fs-1G-FG3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9IK-y6-vhh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Fs-1G-FG3" secondAttribute="bottom" id="IS0-hO-SvP"/>
+                            <constraint firstAttribute="trailing" secondItem="0Fs-1G-FG3" secondAttribute="trailing" id="LxT-bw-8DG"/>
+                            <constraint firstItem="5X8-yz-Z4q" firstAttribute="centerX" secondItem="0Fs-1G-FG3" secondAttribute="centerX" placeholder="YES" id="gGb-lv-VNK"/>
+                            <constraint firstItem="5X8-yz-Z4q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" placeholder="YES" id="urR-A4-Yfg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LxT-bw-8DG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btn" destination="5X8-yz-Z4q" id="X0D-4r-j8u"/>
+                        <outlet property="timePicker" destination="0Fs-1G-FG3" id="pOZ-Qz-3tj"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Dfh-v8-0uU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="455"/>
+        </scene>
+    </scenes>
+</document>
